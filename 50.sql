@@ -96,6 +96,7 @@ FROM
 WHERE
   a.s_score > b.s_score;
 
+
 -- 均分大于60的学生的ID和均分
 -- select选择的字段应该在group by中使用,或者是统计函数,因为既然分了组,单个字段就没意义了,如下面的c_id
 -- GROUP BY使用having进行条件限制
@@ -410,6 +411,8 @@ INNER JOIN teacher te ON co.t_id = te.t_id
 GROUP BY te.t_id
 ORDER BY AVG(sc.s_score) DESC;
 
+
+######## 书签1
 
 
 
